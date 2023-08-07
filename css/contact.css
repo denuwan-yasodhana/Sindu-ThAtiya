@@ -1,0 +1,399 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+
+body
+{
+    min-width: 570px;
+}
+
+/*////////////// Navigation /////////////////*/
+nav
+{
+    font-family: sans-serif;
+    background: #eaf4ff;
+    height: 80px;
+	width: 100%;
+}
+
+img.logo
+{
+    height: 80px;
+    line-height: 80px;
+    padding: 0 100px;
+   
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a
+{
+    color: #0082e6;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a.active,a:hover
+{
+    text-decoration: none;
+    background:#0082e6;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.checkbtn
+{
+    font-size: 30px;
+    color:#0082e6;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+    
+}
+
+@media (max-width: 952px)
+{
+    img.logo
+    {
+        height: 70px;
+        padding-left: 50px;
+    }
+    nav ul li a
+    {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 858px)
+{
+    .checkbtn
+    {
+        display: block;
+        margin-top: 20px;
+    }
+    ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0082e6;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+		z-index: 1;
+    }
+
+    nav ul li
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a
+    {
+        color: #ffffff;
+        font-size: 20px;
+
+    }
+    a:hover,a.active
+    {
+        background: none;
+        color:#3b5998;
+    }
+    #check:checked ~ ul
+    {
+        left: 0;
+
+    }
+   
+}
+
+
+section 
+{
+    position: relative;
+    display: flex;   /*fill available free space*/
+    justify-content: center; /*item*/
+    align-items: center;
+    min-height: 100vh;
+    background: #03a9f4;
+}
+
+section::before
+{
+    content: '';    /* ::before, ::after*/
+    position: absolute; /*including top,left,.. whole page*/
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #bfd9f7;
+}
+
+section .contact .container
+{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+section .contact .container .contactinfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #038fcf;
+    z-index: 1;
+    padding: 40px;
+    flex-direction: column; /*vertical*/
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+section .contact .container .contactinfo h2 
+{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section .contact .container .contactinfo .info
+{
+    position: relative;
+    margin: 20px 0;
+
+
+}
+
+
+section .contact .container .contactinfo .info li
+{
+    position: relative;
+    list-style: none;
+    display: flex;  /*image and text(left and right)*/
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;  /*single item -> mulata*/
+
+}
+
+section .contact .container .contactinfo .info li span:nth-child(1)  /*1 span*/
+{
+    width: 30px;
+    min-width: 30px;
+}
+
+section .contact .container .contactinfo .info li span:nth-child(1) img
+{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.7;
+}
+
+section .contact .container .contactinfo .info li span:nth-child(2)
+{
+   color: #fff;
+   margin-left: 10px;
+   font-weight: 300;
+   opacity: 0.7;
+}
+
+section .contact .container .contactinfo .info li:hover span:nth-child(1) img,
+section .contact .container .contactinfo .info li:hover span:nth-child(2)
+{
+    opacity: 1;
+}
+
+section .contact .container .contactinfo .sci
+{
+    position: relative;
+    display: flex;
+}
+
+section .contact .container .contactinfo .sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+
+section .contact .container .contactinfo .sci li a
+{
+    text-decoration: none;
+}
+
+section .contact .container .contactinfo .sci li a img
+{
+    max-width: 60%;
+    filter: invert(1);
+    opacity: 0.5;
+
+}
+
+section .contact .container .contactinfo .sci li:hover a img
+{
+    opacity: 1;
+}
+
+section .contact .container .contactform
+{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+section .contact .container .contactform h2
+{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section .contact .container .contactform .formBox
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /*list-item-size eka thiyanna*/
+    padding-top: 30px;
+}
+
+section .contact .container .contactform .formBox .inputBox
+{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+section .contact .container .contactform .formBox .inputBox.w50
+{
+    width: 47%;
+}
+
+section .contact .container .contactform .formBox .inputBox.w100
+{
+    width: 100%;
+}
+
+section .contact .container .contactform .formBox .inputBox input,
+section .contact .container .contactform .formBox .inputBox textarea
+
+{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none; 
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+
+section .contact .container .contactform .formBox .inputBox textarea
+{
+    min-height: 120px;
+}
+
+section .contact .container .contactform .formBox .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;  /*cursor not point*/
+    opacity: 0.7    ;
+}
+
+section .contact .container .contactform .formBox .inputBox input:focus ~ span,  /*clicking*/
+section .contact .container .contactform .formBox .inputBox textarea:focus ~ span,
+section .contact .container .contactform .formBox .inputBox input:valid ~ span, /*after clicking*/
+section .contact .container .contactform .formBox .inputBox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+
+section .contact .container .contactform .formBox .inputBox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #456bbd;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+section .contact .container .contactform .formBox .inputBox input[type="submit"]:hover
+{
+    background: #fd6d9a;
+}
+
+@media (max-width: 1138px)
+{
+    section .contact .container
+    {
+        position: relative;
+        min-width: 1000px;
+        min-height: 500px;
+        display: flex;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 1138px)
+{
+    section .contact .container
+    {
+        position: relative;
+        min-width: 800px;
+        min-height: 400px;
+        display: flex;
+        z-index: 1000;
+    }
+}
+
+
+

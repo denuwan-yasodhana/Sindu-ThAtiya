@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8"> <!--to cover all characters and symbols-->
+	<meta name="viewport" content="width=100%, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--Get menu bar icon-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<!--APlayer CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+
+	<script src="js/artists.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/artists.css">
+	
+	<title>Sindu ThAtiya | Artists </title>
+	
+</head>
+<body>
+	<!--Navigation-->
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars" title="Menu"></i>
+		</label>
+		<img src="images/logo.png" class="logo">
+		<ul>
+			<li><a  href="home.html">Home</a></li>
+			<li><a class="active" href="artists.html">Artists</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="contact.html">Join with Us</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<div class="container">
+			<div class="col-md-12">
+					<h1>Select Your Artist</h1>	
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#sprow1" class="album-post"><img src="images/artists/hr jothipala1.jpg" alt="H.R Jothipala"></a>
+					<h3>H.R Jothipala</h3>
+					
+				</div>
+				<div class="col-md-3">
+					<a href="#sprow2" class="album-post"><img src="images/artists/edward jayakody1.jpg" alt="Edward Jayakody"></a>
+					<h3>Edward Jayakody</h3>
+					
+				</div>
+				<div class="col-md-3">
+					<a href="#sprow3" class="album-post"><img src="images/artists/Sunil-Edirisinghe1.jpg" alt="Sunil Edirisinghe"></a>
+					<h3>Sunil Edirisinghe</h3>
+					
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/tm jayarathna.jpg" alt="T.M Jayarathne"></a>
+					<h3>T.M Jayarathne</h3>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/nanda malini.jpg" alt="Nanda Malini"></a>
+					<h3>Nanda Malini</h3>
+					
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/sanath nandasiri.jpg" alt="Sanath Nandasiri"></a>
+					<h3>Sanath Nandasiri</h3>
+					
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/Sunil_Santha.jpg" alt="Sunil Santha"></a>
+					<h3>Sunil Santha</h3>
+					
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="album-post"	><img src="images/artists/priya suriyasena.jpg" alt="Priya Suriyasena"></a>
+					<h3>Priya Suriyasena</h3>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/wd amaradewa1.jpg" alt="W.D Amaradeva"></a>
+					<h3>W.D Amaradeva</h3>
+			
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/chithra somapala.jpg" alt="Chithraa Somapala"></a>
+					<h3>Chithraa Somapala</h3>
+			
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/victor rathnayaka.jpg" alt="Victor Rathnayaka"></a>
+					<h3>Victor Rathnayaka</h3>
+			
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="album-post"><img src="images/artists/sisira_senatarhne.jpg" alt="Sisira Senarathne"></a>
+					<h3>Sisira Senarathne</h3>
+			
+				</div>
+			</div>
+
+			
+			<div class="row" id="sprow1">
+				<div class="col-md-12">
+					<h1>Categories : <span>H.R Jothipala</span> </h1>
+				</div>
+				<div class="col-md-2">
+					<a onclick="popular_songs_sprow1(this);" href="javascript:void(0);" class="album-postsp" data-switch="0">
+						<img src="images/cover_image.jpg" alt="">
+					</a>
+					<h3>Popular Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="love_songs_sprow1(this);" href="javascript:void(0);" class="album-postsp" data-switch="1">
+						<img src="images/Love_song_music_Getty.jpg" alt="">
+					</a>
+					<h3>Love Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="remix_songs_sprow1(this);" href="javascript:void(0);" class="album-postsp" data-switch="2">
+						<img src="images/Best-Remix-Songs.jpg" alt="">
+					</a>
+					<h3>Remix Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="nonstop_sprow1(this);" href="javascript:void(0);" class="album-postsp" data-switch="3">
+						<img src="images/Sony MDR.jpg" alt="">
+					</a>
+					<h3>Non-stop</h3>
+				</div>
+			</div>
+			<div class="row" id="sprow2">
+				<div class="col-md-12">
+					<h1>Categories : <span>Edward Jayakody</span> </h1>
+				</div>
+				<div class="col-md-2">
+					<a onclick="popular_songs_sprow2(this);" href="javascript:void(0);" class="album-postsp" data-switch="0">
+						<img src="images/popular.jpg" alt="">
+					</a>
+					<h3>Popular Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="love_songs_sprow2(this);" href="javascript:void(0);" class="album-postsp" data-switch="1">
+						<img src="images/love songs.jpg" alt="">
+					</a>
+					<h3>Love Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="remix_songs_sprow2(this);" href="javascript:void(0);" class="album-postsp" data-switch="2">
+						<img src="images/7 Upbeat Songs That Will Put You in a Good Mood ___.jpg" alt="">
+					</a>
+					<h3>Remix Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="nonstop_sprow2(this);" href="javascript:void(0);" class="album-postsp" data-switch="3">
+						<img src="images/2.png" alt="">
+					</a>
+					<h3>Non-stop</h3>
+				</div>
+			</div>
+			<div class="row" id="sprow3">
+				<div class="col-md-12">
+					<h1>Categories : <span>Sunil Edirisinghe</span> </h1>
+				</div>
+				<div class="col-md-2">
+					<a onclick="popular_songs_sprow3(this);" href="javascript:void(0);" class="album-postsp" data-switch="0">
+						<img src="images/cover_image.jpg" alt="">
+					</a>
+					<h3>Popular Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="love_songs_sprow3(this);" href="javascript:void(0);" class="album-postsp" data-switch="1">
+						<img src="images/Love_song_music_Getty.jpg" alt="">
+					</a>
+					<h3>Love Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="remix_songs_sprow3(this);" href="javascript:void(0);" class="album-postsp" data-switch="2">
+						<img src="images/Best-Remix-Songs.jpg" alt="">
+					</a>
+					<h3>Remix Songs</h3>
+				</div>
+				<div class="col-md-2">
+					<a onclick="remix_songs_sprow3(this);" href="javascript:void(0);" class="album-postsp" data-switch="3">
+						<img src="images/Sony MDR.jpg" alt="">
+					</a>
+					<h3>Non-stop</h3>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		
+	</div>
+	<div id="aplayer"></div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!--APlayer jQuery Link-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+	<script>
+
+		
+	</script>
+	
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+	margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+	background-color: #e3f0ff;
+    font-family: Candara;
+    min-width: 570px;
+} 
+
+
+
+.main-row
+{
+    margin: 10px;
+    column-count: 2;
+    border: 2px solid #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 2px 35px #3d2173a1;
+    background:  #eaf4ff;
+    
+}
+.left-row
+{
+    margin-top: 40px;
+    margin-left: 60px;
+    
+}
+
+.left-row h1
+{
+    font-size: 45px;
+    font-weight: bold;
+    color: #0020C2;
+}
+
+.right-row
+{
+    padding-top: 13px;
+    margin-left: 60px;
+    text-align: center;
+    
+}
+
+.right-row img
+{
+    border-radius: 15px;
+    width:160px;
+    height: 160px;
+    border: 2px solid #0020C2;
+}
+
+.button1 {
+  background-color: Blue; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 25px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn_playall {
+  background-color: #c4cff7; 
+  color: blue; 
+  border: 2px solid Blue;
+}
+
+.btn_playall:hover {
+  background-color: Blue;
+  color: white;
+}
+
+.button2
+{
+  background-color: Blue;
+  width: 120px; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn_com {
+  background-color: #c4cff7; 
+  color: blue; 
+  border: 2px solid Blue;
+}
+
+.btn_com:hover {
+  background-color: Blue;
+  color: white;
+}
+
+
+.art-musics-titles
+{
+    margin: 2px;
+    padding: 15px;
+    column-count: 5;
+    text-align: center;
+    margin-top: 40px;
+    border: none;
+}
+
+.art-musics-titles h3
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.art-musics-num
+{
+    padding: 3px;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;  
+    background-color: white; 
+    column-count: 5;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    border: 0.5px solid #4b0bfc;
+}
+
+.art-musics-num h4
+{
+  font-size: 15px;
+}
+
+/*Music player style*/
+span
+{
+  color: #000 !important;
+  font-size: 14px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded
+{
+  background: #e0e0e0;
+  height: 4px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played
+{
+  height: 4px;
+  background-color: #2196F3 !important;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb
+{
+  background-color: #2196F3 !important;
+}
+
+.aplayer .aplayer-icon
+{
+  width: 20px;
+  height: 20px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path
+{
+  fill: #000;
+}
+
+.aplayer .aplayer-info .aplayer-music
+{
+  margin-bottom: 5px;
+}
+
+@media (max-width: 892px)
+{
+    .left-row h1
+    {
+        font-size: 35px;
+    }
+    .art-musics-titles h3
+    {
+        font-size: 18px;
+    }
+    .art-musics-num h4
+    {
+        font-size: 13px;
+    }
+    .button2
+    {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 770px)
+{
+    .right-row img
+    {
+        width: 140px;
+        height: 140px;
+    }
+     .left-row h1
+    {
+        font-size: 30px;
+    }
+    .button1
+    {
+        font-size: 14px;
+    }
+
+    .art-musics-titles
+    {
+        padding: 5px;
+    }
+    .art-musics-num
+    {
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+    .button2
+    {
+        width: 80px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
